@@ -2,8 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Battery, Gem, BarChart3, Globe2, Recycle } from "lucide-react";
-import spodumeneMineral from "@/assets/spodumene-mineral.jpg";
-import miningOperation from "@/assets/mining-operation.jpg";
+import spodumeneCrystal from "@/assets/spodumene-crystal.jpg";
+import lithiumMine from "@/assets/lithium-mine.jpg";
 
 const Spodumene = () => {
   return (
@@ -31,7 +31,7 @@ const Spodumene = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="rounded-lg overflow-hidden shadow-professional">
               <img 
-                src={spodumeneMineral} 
+                src={spodumeneCrystal} 
                 alt="Spodumene mineral crystals" 
                 className="w-full h-80 object-cover"
               />
@@ -190,7 +190,7 @@ const Spodumene = () => {
             </div>
             <div className="rounded-lg overflow-hidden shadow-professional">
               <img 
-                src={miningOperation} 
+                src={lithiumMine} 
                 alt="Spodumene mining operation" 
                 className="w-full h-80 object-cover"
               />

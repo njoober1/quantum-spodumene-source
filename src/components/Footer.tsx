@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,11 +27,15 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span className="text-primary-foreground/80">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/80">NYC: +1 (347) 877-7765</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-4 w-4" />
+                <span className="text-primary-foreground/80">TOR: +1 (647) 292-6433</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-primary-foreground/80">info@quantumgreenenergy.com</span>
+                <span className="text-primary-foreground/80">contact@quantumgenergy.com</span>
               </div>
             </div>
           </div>
@@ -47,10 +51,21 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/60">
-            © 2024 Quantum Green Energy. All rights reserved.
-          </p>
+        <div className="border-t border-white/20 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-primary-foreground/60">
+              © 2024 Quantum Green Energy. All rights reserved.
+            </p>
+            <a 
+              href="https://www.linkedin.com/company/quantum-green-energy" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-primary-foreground hover:text-white transition-colors"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span>Follow us on LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

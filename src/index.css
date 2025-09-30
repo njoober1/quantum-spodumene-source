@@ -38,7 +38,7 @@ All colors MUST be HSL.
 
     /* Professional design tokens */
     --gradient-primary: linear-gradient(135deg, hsl(150 60% 25%), hsl(150 45% 35%));
-    --gradient-hero: linear-gradient(180deg, hsl(150 60% 25% / 0.95), hsl(150 45% 35% / 0.9));
+    --gradient-hero: linear-gradient(180deg, hsl(150 60% 25% / 0.4), hsl(150 45% 35% / 0.3));
     --shadow-professional: 0 4px 20px hsl(150 60% 25% / 0.1);
     --shadow-card: 0 2px 10px hsl(150 20% 20% / 0.08);
     

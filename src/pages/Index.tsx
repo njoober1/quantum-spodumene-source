@@ -4,7 +4,7 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Globe, Award, TrendingUp } from "lucide-react";
+import { ArrowRight, Users, Globe, Award, TrendingUp, Briefcase } from "lucide-react";
 
 const Index = () => {
   return (
@@ -71,8 +71,67 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Spodumene Section */}
+      {/* Team Section */}
       <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-6">
+              Meet Our Leadership Team
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Our experienced executives bring decades of expertise in mining, energy, and finance 
+              to deliver exceptional results for our clients.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="group hover:shadow-professional transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Briefcase className="h-16 w-16 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">John Anderson</h3>
+                <p className="text-primary font-semibold mb-4">Chief Executive Officer</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  25+ years in mining and mineral sourcing. Former VP at a Fortune 500 mining company, 
+                  specializing in lithium and rare earth mineral procurement for the energy sector.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-professional transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Globe className="h-16 w-16 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Sarah Chen</h3>
+                <p className="text-primary font-semibold mb-4">Chief Operating Officer</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  20+ years managing global supply chains and operations in the clean energy sector. 
+                  Expert in sustainable mining practices and international mineral trade compliance.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="group hover:shadow-professional transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+                  <TrendingUp className="h-16 w-16 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Michael Roberts</h3>
+                <p className="text-primary font-semibold mb-4">Chief Financial Officer</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  15+ years in financial strategy and risk management in the commodities sector. 
+                  Former investment banker specializing in mining and energy infrastructure projects.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* About Spodumene Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>

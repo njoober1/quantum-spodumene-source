@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const location = useLocation();
@@ -42,9 +41,6 @@ const Navigation = () => {
             >
               Spodumene
             </Link>
-            <Button variant="default" className="transition-all hover:shadow-professional">
-              Contact Us
-            </Button>
           </div>
         </div>
       </div>
