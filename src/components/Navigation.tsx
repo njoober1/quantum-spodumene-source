@@ -34,12 +34,28 @@ const Navigation = () => {
               Operations
             </Link>
             <Link 
+              to="/services" 
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive('/services') ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              Services
+            </Link>
+            <Link 
               to="/spodumene" 
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/spodumene') ? 'text-primary' : 'text-muted-foreground'
               }`}
             >
               Spodumene
+            </Link>
+            <Link 
+              to="/team" 
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                isActive('/team') ? 'text-primary' : 'text-muted-foreground'
+              }`}
+            >
+              Our Team
             </Link>
           </div>
         </div>
