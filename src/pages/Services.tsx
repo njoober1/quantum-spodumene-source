@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import { Card, CardContent } from "@/components/ui/card";
 import { Package, Users, TruckIcon, TrendingUp, CheckCircle } from "lucide-react";
 
@@ -20,15 +21,16 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: "Mining Consultancy",
-      description: "We provide expert consulting services to help clients navigate the complex landscape of lithium mining and spodumene extraction. Our team offers strategic guidance on mine selection, operational optimization, and sustainability practices.",
+      title: "Mining Connection",
+      description: "We maintain continuous, direct communication with mining operations worldwide. Our team is actively engaged with mine operators, staying updated on production schedules, extraction processes, and operational developments to ensure seamless coordination and reliable supply chains.",
       features: [
-        "Comprehensive mine site evaluations and due diligence",
-        "Technical feasibility studies and resource assessments",
-        "Sustainability and environmental impact analysis",
-        "Operational efficiency recommendations",
-        "Mining technology and equipment selection guidance",
-        "Regulatory compliance and permitting support"
+        "Daily communication with active mining operations",
+        "Real-time updates on production status and output",
+        "Direct coordination with mine site managers and operators",
+        "On-site visits and operational assessments",
+        "Continuous monitoring of extraction quality and grades",
+        "Proactive problem-solving for operational challenges",
+        "Regular briefings on mining developments and expansions"
       ]
     },
     {
@@ -140,6 +142,7 @@ const Services = () => {
       </section>
 
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
