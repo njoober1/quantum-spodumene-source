@@ -5,6 +5,7 @@ import miningOperation from "@/assets/mining-operation.jpg";
 import greenEnergy from "@/assets/green-energy.jpg";
 import spodumeneMineral from "@/assets/spodumene-mineral.jpg";
 import consultingOffice from "@/assets/consulting-office.jpg";
+import lithiumSpodumeneMine from "@/assets/lithium-spodumene-mine.jpg";
 
 const slides = [
   {
@@ -30,6 +31,12 @@ const slides = [
     title: "New York Based Expertise",
     subtitle: "Professional consultancy with global reach and local knowledge",
     cta: "Contact Us"
+  },
+  {
+    image: lithiumSpodumeneMine,
+    title: "Lithium & Spodumene Mining Excellence",
+    subtitle: "Direct access to world-class lithium extraction operations",
+    cta: "View Operations"
   }
 ];
 

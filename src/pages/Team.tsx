@@ -6,25 +6,25 @@ import { Linkedin, Mail } from "lucide-react";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Dr. Sarah Mitchell",
+      name: "Wajahat Siddiqui",
       role: "Chief Executive Officer",
-      bio: "Dr. Mitchell brings over 20 years of experience in the mining and energy sectors. She holds a PhD in Geology from MIT and has led strategic initiatives for major lithium suppliers across three continents. Her vision has positioned Quantum Green Energy as a trusted leader in sustainable spodumene sourcing.",
+      bio: "Wajahat brings over 20 years of experience in the mining and energy sectors. He holds a PhD in Geology from MIT and has led strategic initiatives for major lithium suppliers across three continents. His vision has positioned Quantum Green Energy as a trusted leader in sustainable spodumene sourcing.",
       linkedin: "#",
-      email: "s.mitchell@quantumgenergy.com"
+      email: "w.siddiqui@quantumgenergy.com"
     },
     {
-      name: "James Rodriguez",
+      name: "Nizar Joober",
       role: "Chief Operating Officer",
-      bio: "With 15 years of operational excellence in mining consultancy, James oversees all day-to-day operations and client relationships. He previously managed supply chain operations for one of Australia's largest lithium producers and has extensive expertise in mine site evaluation and logistics optimization.",
+      bio: "With 15 years of operational excellence in mining consultancy, Nizar oversees all day-to-day operations and client relationships. He previously managed supply chain operations for one of Australia's largest lithium producers and has extensive expertise in mine site evaluation and logistics optimization.",
       linkedin: "#",
-      email: "j.rodriguez@quantumgenergy.com"
+      email: "n.joober@quantumgenergy.com"
     },
     {
-      name: "Emily Chen",
+      name: "John Snow",
       role: "Chief Financial Officer",
-      bio: "Emily is a seasoned financial strategist with expertise in commodities trading and international finance. She holds an MBA from Columbia Business School and has worked with leading investment firms specializing in critical minerals. Emily ensures our clients receive competitive pricing and optimal contract structures.",
+      bio: "John is a seasoned financial strategist with expertise in commodities trading and international finance. He holds an MBA from Columbia Business School and has worked with leading investment firms specializing in critical minerals. John ensures our clients receive competitive pricing and optimal contract structures.",
       linkedin: "#",
-      email: "e.chen@quantumgenergy.com"
+      email: "j.snow@quantumgenergy.com"
     }
   ];
 

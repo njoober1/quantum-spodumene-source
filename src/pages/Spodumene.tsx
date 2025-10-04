@@ -4,6 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Battery, Gem, BarChart3, Globe2, Recycle } from "lucide-react";
 import spodumeneCrystal from "@/assets/spodumene-crystal.jpg";
 import lithiumMine from "@/assets/lithium-mine.jpg";
+import spodumeneCloseup from "@/assets/spodumene-closeup.jpg";
+import lithiumProcessing from "@/assets/lithium-processing.jpg";
+import spodumeneOre from "@/assets/spodumene-ore.jpg";
+import lithiumSamples from "@/assets/lithium-samples.jpg";
 
 const Spodumene = () => {
   return (
@@ -155,45 +159,111 @@ const Spodumene = () => {
       </section>
 
       {/* Mining & Processing */}
-      <section className="py-16">
+      <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                Mining & Processing
-              </h2>
-              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Spodumene is primarily extracted from hard rock pegmatite deposits through conventional 
-                open-pit mining methods. The mineral requires specialized processing to convert it into 
-                lithium compounds suitable for battery manufacturing.
-              </p>
-              <div className="space-y-4">
-                <div className="bg-card border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">Extraction Process</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Hard rock mining followed by crushing, grinding, and flotation concentration
-                  </p>
-                </div>
-                <div className="bg-card border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">Conversion</h4>
-                  <p className="text-muted-foreground text-sm">
-                    High-temperature roasting converts spodumene to lithium carbonate or hydroxide
-                  </p>
-                </div>
-                <div className="bg-card border border-border p-4 rounded-lg">
-                  <h4 className="font-semibold text-foreground mb-2">Key Locations</h4>
-                  <p className="text-muted-foreground text-sm">
-                    Major deposits in Australia, Chile, Canada, and parts of Africa
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="rounded-lg overflow-hidden shadow-professional">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+              Mining & Processing
+            </h2>
+            
+            <div className="mb-8 rounded-lg overflow-hidden">
               <img 
                 src={lithiumMine} 
-                alt="Spodumene mining operation" 
-                className="w-full h-80 object-cover"
+                alt="Lithium mine operation" 
+                className="w-full h-[400px] object-cover"
               />
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">Extraction Process</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Spodumene is typically extracted through open-pit mining operations. The ore is then crushed 
+                  and processed through flotation methods to concentrate the spodumene mineral. Advanced 
+                  processing techniques have made extraction more efficient and environmentally sustainable.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">Conversion to Lithium Compounds</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  After extraction, spodumene concentrate undergoes a conversion process to produce lithium 
+                  hydroxide or lithium carbonate. These compounds are the key materials used in battery 
+                  manufacturing. The conversion involves heating the concentrate to high temperatures (decrepitation) 
+                  followed by acid leaching and purification.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">Global Mining Locations</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Major spodumene mining operations are located in Australia, which accounts for over 50% of 
+                  global production. Other significant producers include China, Zimbabwe, and Brazil. The growing 
+                  demand for lithium has led to the development of new mining projects worldwide, with particular 
+                  focus on sustainable and responsible mining practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+              Spodumene & Lithium Gallery
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={spodumeneCloseup} 
+                  alt="Spodumene crystal close-up" 
+                  className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-4 bg-card">
+                  <h3 className="font-semibold text-foreground">Spodumene Crystal Structure</h3>
+                  <p className="text-sm text-muted-foreground">Natural crystalline formation</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={lithiumProcessing} 
+                  alt="Lithium processing facility" 
+                  className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-4 bg-card">
+                  <h3 className="font-semibold text-foreground">Lithium Processing Plant</h3>
+                  <p className="text-sm text-muted-foreground">Modern extraction facility</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={spodumeneOre} 
+                  alt="Raw spodumene ore" 
+                  className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-4 bg-card">
+                  <h3 className="font-semibold text-foreground">Raw Spodumene Ore</h3>
+                  <p className="text-sm text-muted-foreground">Natural mineral specimen</p>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={lithiumSamples} 
+                  alt="Pure lithium samples" 
+                  className="w-full h-[300px] object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-4 bg-card">
+                  <h3 className="font-semibold text-foreground">Pure Lithium Metal</h3>
+                  <p className="text-sm text-muted-foreground">Refined lithium samples</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
