@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import miningOperation from "@/assets/mining-operation.jpg";
 import greenEnergy from "@/assets/green-energy.jpg";
-import spodumeneMineral from "@/assets/spodumene-mineral.jpg";
+import spodumenePremium from "@/assets/spodumene-premium.jpg";
 import consultingOffice from "@/assets/consulting-office.jpg";
 import lithiumSpodumeneMine from "@/assets/lithium-spodumene-mine.jpg";
 
@@ -21,7 +21,7 @@ const slides = [
     cta: "Our Operations"
   },
   {
-    image: spodumeneMineral,
+    image: spodumenePremium,
     title: "Premium Spodumene Quality",
     subtitle: "Direct access to high-grade spodumene deposits worldwide",
     cta: "About Spodumene"
