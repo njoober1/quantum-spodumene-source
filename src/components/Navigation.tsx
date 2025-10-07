@@ -60,6 +60,12 @@ const Navigation = () => {
             >
               Our Team
             </Link>
+            <Link 
+              to="/contact" 
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -119,6 +125,13 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Our Team
+            </Link>
+            <Link 
+              to="/contact" 
+              className="block bg-primary text-primary-foreground px-6 py-2 rounded-md text-sm font-medium text-center transition-all duration-300 hover:bg-primary/90"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
             </Link>
           </div>
         )}
