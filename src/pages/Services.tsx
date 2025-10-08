@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Package, Users, TruckIcon, TrendingUp, CheckCircle } from "lucide-react";
 
@@ -82,6 +83,57 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Capacity Highlight Banner */}
+      <section className="py-12 bg-gradient-to-r from-primary to-primary/80 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="text-center md:text-left">
+                <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                  <span className="text-white font-semibold text-sm">Industry-Leading Capacity</span>
+                </div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+                  500,000
+                </h2>
+                <p className="text-2xl md:text-3xl text-white/90 font-semibold mb-2">
+                  Metric Tonnes
+                </p>
+                <p className="text-lg text-white/80">
+                  Annual Spodumene Sourcing Capacity
+                </p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/20">
+                <h3 className="text-xl font-bold text-white mb-4">What This Means for You</h3>
+                <ul className="space-y-3 text-white/90">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 mt-1" />
+                    <span>Reliable, large-scale supply agreements</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 mt-1" />
+                    <span>Consistent quality across all shipments</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 mt-1" />
+                    <span>Competitive pricing through volume</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 flex-shrink-0 mt-1" />
+                    <span>Direct mine-to-client delivery coordination</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Detail */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -143,6 +195,7 @@ const Services = () => {
 
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

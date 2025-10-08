@@ -3,9 +3,10 @@ import Navigation from "@/components/Navigation";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Globe, Award, TrendingUp, Briefcase, Heart, Shield, Leaf, Lightbulb } from "lucide-react";
+import { ArrowRight, Users, Globe, Award, TrendingUp, Briefcase, Heart, Shield, Leaf, Lightbulb, CheckCircle } from "lucide-react";
 import teamWajahat from "@/assets/team-wajahat-updated.jpg";
 import teamNizar from "@/assets/team-nizar-updated.jpg";
 import teamJohn from "@/assets/team-john-updated.jpg";
@@ -71,6 +72,70 @@ const Index = () => {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Capacity Highlight Section */}
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-primary/90 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '50px 50px'
+          }} />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full mb-6 animate-fade-in">
+                <span className="text-white font-bold text-lg">Our Sourcing Power</span>
+              </div>
+              <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 animate-scale-in">
+                500,000
+              </h2>
+              <p className="text-3xl md:text-4xl text-white/95 font-bold mb-4">
+                Metric Tonnes per Year
+              </p>
+              <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+                Industry-leading annual spodumene sourcing capacity, connecting you to the world's 
+                premier lithium deposits in Australia, Canada, and Africa
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl font-bold text-white mb-2">100%</div>
+                  <p className="text-white/90 font-semibold mb-1">Verified Sources</p>
+                  <p className="text-white/70 text-sm">All mining partners certified and audited</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl font-bold text-white mb-2">24/7</div>
+                  <p className="text-white/90 font-semibold mb-1">Supply Monitoring</p>
+                  <p className="text-white/70 text-sm">Real-time tracking and coordination</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl font-bold text-white mb-2">3</div>
+                  <p className="text-white/90 font-semibold mb-1">Continents</p>
+                  <p className="text-white/70 text-sm">Global network of mining operations</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-12 text-center">
+              <Link to="/services">
+                <Button size="lg" variant="secondary" className="group text-lg px-8 py-6">
+                  Discover Our Services
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -361,6 +426,7 @@ const Index = () => {
 
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

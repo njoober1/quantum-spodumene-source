@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Users, Globe, TrendingUp, CheckCircle, Target } from "lucide-react";
 import consultingOffice from "@/assets/consulting-office.jpg";
@@ -150,6 +152,8 @@ const Operations = () => {
       </section>
 
       <Footer />
+      <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

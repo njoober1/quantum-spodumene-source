@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Leaf, Recycle, Shield, Users, Target, Globe, CheckCircle } from "lucide-react";
 import sustainabilityImage from "@/assets/sustainability.jpg";
@@ -281,6 +282,7 @@ const Sustainability = () => {
 
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

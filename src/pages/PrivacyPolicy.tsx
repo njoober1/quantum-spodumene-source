@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import privacyImage from "@/assets/privacy-policy.jpg";
 
 const PrivacyPolicy = () => {
@@ -182,6 +183,7 @@ const PrivacyPolicy = () => {
 
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

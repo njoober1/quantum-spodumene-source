@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import termsImage from "@/assets/terms-of-service.jpg";
 
 const TermsOfService = () => {
@@ -223,6 +224,7 @@ const TermsOfService = () => {
 
       <Footer />
       <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

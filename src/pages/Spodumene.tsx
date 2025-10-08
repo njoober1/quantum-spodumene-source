@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Battery, Gem, BarChart3, Globe2, Recycle } from "lucide-react";
 import spodumeneCrystal from "@/assets/spodumene-crystal.jpg";
@@ -270,6 +272,8 @@ const Spodumene = () => {
       </section>
 
       <Footer />
+      <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };

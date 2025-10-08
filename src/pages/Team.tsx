@@ -1,5 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail, TrendingUp, Zap, Shield } from "lucide-react";
 import wajahatImage from "@/assets/team-wajahat.jpg";
@@ -214,6 +216,8 @@ const Team = () => {
       </section>
 
       <Footer />
+      <ScrollToTop />
+      <CookieConsent />
     </div>
   );
 };
