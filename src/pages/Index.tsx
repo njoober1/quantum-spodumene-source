@@ -6,6 +6,9 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Globe, Award, TrendingUp, Briefcase, Heart, Shield, Leaf, Lightbulb } from "lucide-react";
+import teamWajahat from "@/assets/team-wajahat-updated.jpg";
+import teamNizar from "@/assets/team-nizar-updated.jpg";
+import teamJohn from "@/assets/team-john-updated.jpg";
 
 const Index = () => {
   return (
@@ -88,8 +91,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="group hover:shadow-professional transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                  <Briefcase className="h-16 w-16 text-primary" />
+                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img src={teamWajahat} alt="Wajahat Siddiqui" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">Wajahat Siddiqui</h3>
                 <p className="text-primary font-semibold mb-4">Chief Executive Officer</p>
@@ -102,8 +105,8 @@ const Index = () => {
             
             <Card className="group hover:shadow-professional transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                  <Globe className="h-16 w-16 text-primary" />
+                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img src={teamNizar} alt="Nizar Joober" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">Nizar Joober</h3>
                 <p className="text-primary font-semibold mb-4">Chief Operating Officer</p>
@@ -116,8 +119,8 @@ const Index = () => {
             
             <Card className="group hover:shadow-professional transition-all duration-300">
               <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                  <TrendingUp className="h-16 w-16 text-primary" />
+                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
+                  <img src={teamJohn} alt="John Snow" className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">John Snow</h3>
                 <p className="text-primary font-semibold mb-4">Chief Financial Officer</p>

@@ -9,9 +9,9 @@ const Services = () => {
     {
       icon: Package,
       title: "Spodumene Sourcing",
-      description: "Our core service focuses on identifying and securing high-quality spodumene sources for the clean energy sector. We leverage our extensive global network to connect clients with reliable mining operations that meet stringent quality standards.",
+      description: "Our core service focuses on identifying and securing high-quality spodumene sources for the clean energy sector. With a yearly capacity of 500,000 metric tonnes, we leverage our extensive global network to connect clients with reliable mining operations that meet stringent quality standards.",
       features: [
-        "Direct access to premium spodumene deposits in Australia, Chile, and Africa",
+        "Direct access to premium spodumene deposits in Australia, Canada, and Africa",
         "Quality assessment and grade verification from certified laboratories",
         "Long-term supply agreements with established mining operations",
         "Competitive pricing through strategic partnerships",
