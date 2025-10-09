@@ -7,9 +7,10 @@ import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Globe, Award, TrendingUp, Briefcase, Heart, Shield, Leaf, Lightbulb, CheckCircle } from "lucide-react";
-import teamWajahat from "@/assets/team-wajahat-updated.jpg";
-import teamNizar from "@/assets/team-nizar-updated.jpg";
-import teamJohn from "@/assets/team-john-updated.jpg";
+import spodumeneOre from "@/assets/spodumene-ore.jpg";
+import spodumeneMineral from "@/assets/spodumene-mineral.jpg";
+import spodumeneCloseup from "@/assets/spodumene-closeup.jpg";
+import spodumeneCrystal from "@/assets/spodumene-crystal.jpg";
 
 const Index = () => {
   return (
@@ -140,61 +141,144 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Services Summary Section */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Meet Our Leadership Team
+              Our Core Services
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Our experienced executives bring decades of expertise in mining, energy, and finance 
-              to deliver exceptional results for our clients.
+              Comprehensive spodumene sourcing and consulting services tailored to meet the evolving 
+              demands of the clean energy and electric vehicle industries.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-professional transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
-                  <img src={teamWajahat} alt="Wajahat Siddiqui" className="w-full h-full object-cover" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <Card className="group hover:shadow-professional transition-all duration-300 overflow-hidden">
+              <div className="relative h-64">
+                <img 
+                  src={spodumeneOre} 
+                  alt="High-grade spodumene ore" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Spodumene Sourcing</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Wajahat Siddiqui</h3>
-                <p className="text-primary font-semibold mb-4">Chief Executive Officer</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  25+ years in mining and mineral sourcing. Former VP at a Fortune 500 mining company, 
-                  specializing in lithium and rare earth mineral procurement for the energy sector.
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  Direct access to high-grade spodumene from verified mining operations in Australia, 
+                  Canada, and Africa. With a yearly capacity of 500,000 metric tonnes, we ensure 
+                  reliable supply chains for battery manufacturers and clean energy companies.
                 </p>
+                <div className="flex items-start space-x-2 mb-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Li₂O content: 6-8% guaranteed minimum</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Full traceability and quality certification</span>
+                </div>
               </CardContent>
             </Card>
-            
-            <Card className="group hover:shadow-professional transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
-                  <img src={teamNizar} alt="Nizar Joober" className="w-full h-full object-cover" />
+
+            <Card className="group hover:shadow-professional transition-all duration-300 overflow-hidden">
+              <div className="relative h-64">
+                <img 
+                  src={spodumeneMineral} 
+                  alt="Spodumene mineral analysis" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Market Intelligence</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Nizar Joober</h3>
-                <p className="text-primary font-semibold mb-4">Chief Operating Officer</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  20+ years managing global supply chains and operations in the clean energy sector. 
-                  Expert in sustainable mining practices and international mineral trade compliance.
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  Real-time market analysis and pricing insights for lithium and spodumene markets. 
+                  Our expert team monitors global supply chains, helping clients make informed 
+                  procurement decisions.
                 </p>
+                <div className="flex items-start space-x-2 mb-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Weekly market reports and forecasts</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Strategic sourcing recommendations</span>
+                </div>
               </CardContent>
             </Card>
-            
-            <Card className="group hover:shadow-professional transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden">
-                  <img src={teamJohn} alt="John Snow" className="w-full h-full object-cover" />
+
+            <Card className="group hover:shadow-professional transition-all duration-300 overflow-hidden">
+              <div className="relative h-64">
+                <img 
+                  src={spodumeneCloseup} 
+                  alt="Spodumene crystal closeup" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Quality Assurance</h3>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">John Snow</h3>
-                <p className="text-primary font-semibold mb-4">Chief Financial Officer</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  15+ years in financial strategy and risk management in the commodities sector. 
-                  Former investment banker specializing in mining and energy infrastructure projects.
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  Comprehensive testing and verification protocols ensure every shipment meets 
+                  stringent quality standards. Independent laboratory analysis and certification 
+                  for complete transparency.
                 </p>
+                <div className="flex items-start space-x-2 mb-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">ISO-certified testing procedures</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Third-party verification available</span>
+                </div>
               </CardContent>
             </Card>
+
+            <Card className="group hover:shadow-professional transition-all duration-300 overflow-hidden">
+              <div className="relative h-64">
+                <img 
+                  src={spodumeneCrystal} 
+                  alt="Premium spodumene crystal" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white mb-2">Logistics Coordination</h3>
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  End-to-end supply chain management from mine to manufacturing facility. We handle 
+                  international shipping, customs clearance, and delivery coordination to ensure 
+                  timely arrivals.
+                </p>
+                <div className="flex items-start space-x-2 mb-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Global shipping partnerships</span>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <span className="text-muted-foreground">Real-time shipment tracking</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Link to="/services">
+              <Button size="lg" className="group">
+                Explore All Services
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

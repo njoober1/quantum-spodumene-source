@@ -3,9 +3,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import miningOperation from "@/assets/mining-operation.jpg";
 import greenEnergy from "@/assets/green-energy.jpg";
-import spodumenePremium from "@/assets/spodumene-premium.jpg";
+import spodumenePremium from "@/assets/spudo.png";
 import consultingOffice from "@/assets/consulting-office.jpg";
 import lithiumSpodumeneMine from "@/assets/lithium-spodumene-mine.jpg";
+import lithiumOperations from "@/assets/lithium.png";
 
 const slides = [
   {
@@ -13,6 +14,12 @@ const slides = [
     title: "Expert Spodumene Sourcing",
     subtitle: "Professional mining consultancy services for sustainable lithium sourcing",
     cta: "Learn More"
+  },
+  {
+    image: lithiumOperations,
+    title: "Direct Miner Connections",
+    subtitle: "Established partnerships with premier lithium mining operations across three continents",
+    cta: "Our Network"
   },
   {
     image: greenEnergy,
