@@ -3,36 +3,33 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, TrendingUp, Zap, Shield } from "lucide-react";
-import wajahatImage from "@/assets/team-wajahat.jpg";
-import nizarImage from "@/assets/team-nizar.jpg";
-import johnImage from "@/assets/team-john.jpg";
+import { Mail, TrendingUp, Zap, Shield } from "lucide-react";
+import wajahatImage from "@/assets/team-wajahat-new.jpg";
+import nizarImage from "@/assets/team-nizar-new.jpg";
+import sandraImage from "@/assets/team-sandra.jpg";
 
 const Team = () => {
   const teamMembers = [
     {
       name: "Wajahat Siddiqui",
       role: "Chief Executive Officer",
-      bio: "Wajahat brings over 20 years of experience in the mining and energy sectors. He holds a PhD in Geology from MIT and has led strategic initiatives for major lithium suppliers across three continents. His vision has positioned Quantum Green Energy as a trusted leader in sustainable spodumene sourcing.",
-      linkedin: "#",
+      bio: "Wajahat brings over 20 years of experience in the mining and energy sectors, having led strategic initiatives for major lithium suppliers across three continents. Known for his visionary leadership and deep industry knowledge, he has positioned Quantum Green Energy as a trusted leader in sustainable spodumene sourcing. His strategic thinking and commitment to ethical practices drive our company's mission forward.",
       email: "w.siddiqui@quantumgenergy.com",
       image: wajahatImage
     },
     {
       name: "Nizar Joober",
       role: "Chief Operating Officer",
-      bio: "With 15 years of operational excellence in mining consultancy, Nizar oversees all day-to-day operations and client relationships. He previously managed supply chain operations for one of Australia's largest lithium producers and has extensive expertise in mine site evaluation and logistics optimization.",
-      linkedin: "#",
+      bio: "With 15 years of operational excellence in mining consultancy, Nizar oversees all day-to-day operations and client relationships. His hands-on approach and extensive expertise in mine site evaluation, logistics optimization, and supply chain management ensure seamless operations. Nizar's ability to build strong partnerships and deliver results has been instrumental in our client success stories.",
       email: "n.joober@quantumgenergy.com",
       image: nizarImage
     },
     {
-      name: "John Snow",
+      name: "Sandra Stèphanie Chastagnol",
       role: "Chief Financial Officer",
-      bio: "John is a seasoned financial strategist with expertise in commodities trading and international finance. He holds an MBA from Columbia Business School and has worked with leading investment firms specializing in critical minerals. John ensures our clients receive competitive pricing and optimal contract structures.",
-      linkedin: "#",
-      email: "j.snow@quantumgenergy.com",
-      image: johnImage
+      bio: "Sandra is a seasoned financial strategist with extensive expertise in commodities trading and international finance. Having worked with leading investment firms specializing in critical minerals, she brings exceptional analytical skills and strategic insight to our financial operations. Sandra's ability to navigate complex markets and structure optimal contracts ensures our clients receive competitive pricing and superior value.",
+      email: "s.chastagnol@quantumgenergy.com",
+      image: sandraImage
     }
   ];
 
@@ -82,20 +79,13 @@ const Team = () => {
                     {member.bio}
                   </p>
                   
-                  <div className="flex justify-center space-x-4">
+                  <div className="flex justify-center">
                     <a 
                       href={`mailto:${member.email}`}
                       className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <Mail className="h-5 w-5" />
-                    </a>
-                    <a 
-                      href={member.linkedin}
-                      className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Linkedin className="h-5 w-5" />
+                      <span className="text-sm">Contact</span>
                     </a>
                   </div>
                 </CardContent>
