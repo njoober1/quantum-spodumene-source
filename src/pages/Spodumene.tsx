@@ -4,7 +4,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Battery, Gem, BarChart3, Globe2, Recycle } from "lucide-react";
-import spodumeneCrystal from "@/assets/spodumene-crystal.jpg";
+import spodumeneCrystal from "@/assets/spudo-2.png";
 import lithiumMine from "@/assets/lithium-mine.jpg";
 import spodumeneCloseup from "@/assets/spodumene-closeup.jpg";
 import lithiumProcessing from "@/assets/lithium-processing.jpg";

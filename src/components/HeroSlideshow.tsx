@@ -35,8 +35,8 @@ const slides = [
   },
   {
     image: consultingOffice,
-    title: "New York Based Expertise",
-    subtitle: "Professional consultancy with global reach and local knowledge",
+    title: "Worldwide Mining Expertise",
+    subtitle: "Professional consultancy with global reach and international partnerships",
     cta: "Contact Us"
   },
   {

@@ -13,8 +13,8 @@ const Footer = () => {
               <span className="text-xl font-bold">Quantum Green Energy</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Professional spodumene sourcing consultancy based in New York, 
-              connecting sustainable mining operations with clean energy initiatives.
+              Professional spodumene sourcing consultancy, 
+              connecting sustainable mining operations with clean energy initiatives worldwide.
             </p>
           </div>
           
@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
-                <span className="text-primary-foreground/80">New York, NY</span>
+                <span className="text-primary-foreground/80">Global Operations</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />

@@ -25,6 +25,7 @@ const Navigation = () => {
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/') ? 'text-primary' : 'text-muted-foreground'
               }`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Home
             </Link>
@@ -33,14 +34,16 @@ const Navigation = () => {
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/operations') ? 'text-primary' : 'text-muted-foreground'
               }`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Operations
             </Link>
             <Link 
               to="/services" 
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActive('/services') ? 'text-primary' : 'text-muted-foreground'
+              className={`text-sm font-medium transition-colors ${
+                isActive('/services') ? 'text-[#FF8C00]' : 'text-muted-foreground hover:text-[#FF8C00]'
               }`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Services
             </Link>
@@ -49,6 +52,7 @@ const Navigation = () => {
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/spodumene') ? 'text-primary' : 'text-muted-foreground'
               }`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Spodumene
             </Link>
@@ -57,12 +61,14 @@ const Navigation = () => {
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/team') ? 'text-primary' : 'text-muted-foreground'
               }`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Our Team
             </Link>
             <Link 
               to="/contact" 
               className="bg-primary text-primary-foreground px-6 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Contact
             </Link>
@@ -86,7 +92,7 @@ const Navigation = () => {
               className={`block text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/') ? 'text-primary' : 'text-muted-foreground'
               }`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Home
             </Link>
@@ -95,16 +101,16 @@ const Navigation = () => {
               className={`block text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/operations') ? 'text-primary' : 'text-muted-foreground'
               }`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Operations
             </Link>
             <Link 
               to="/services" 
-              className={`block text-sm font-medium transition-colors hover:text-primary ${
-                isActive('/services') ? 'text-primary' : 'text-muted-foreground'
+              className={`block text-sm font-medium transition-colors ${
+                isActive('/services') ? 'text-[#FF8C00]' : 'text-muted-foreground hover:text-[#FF8C00]'
               }`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Services
             </Link>
@@ -113,7 +119,7 @@ const Navigation = () => {
               className={`block text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/spodumene') ? 'text-primary' : 'text-muted-foreground'
               }`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Spodumene
             </Link>
@@ -122,14 +128,14 @@ const Navigation = () => {
               className={`block text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/team') ? 'text-primary' : 'text-muted-foreground'
               }`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Our Team
             </Link>
             <Link 
               to="/contact" 
               className="block bg-primary text-primary-foreground px-6 py-2 rounded-md text-sm font-medium text-center transition-all duration-300 hover:bg-primary/90"
-              onClick={() => setIsMenuOpen(false)}
+              onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             >
               Contact
             </Link>
