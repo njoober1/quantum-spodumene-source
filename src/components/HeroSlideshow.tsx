@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import miningOperation from "@/assets/mining-operation.jpg";
@@ -49,11 +50,12 @@ const slides = [
 
 const HeroSlideshow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
   }, []);
 
@@ -90,14 +92,15 @@ const HeroSlideshow = () => {
               </p>
             <Button 
               size="lg" 
-              className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg transition-all hover:shadow-professional"
+              className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg transition-all hover:shadow-professional active:scale-95"
               onClick={() => {
-                if (slide.cta === "Learn More") window.location.href = "/services";
-                else if (slide.cta === "Our Network") window.location.href = "/operations";
-                else if (slide.cta === "Our Operations") window.location.href = "/operations";
-                else if (slide.cta === "About Spodumene") window.location.href = "/spodumene";
-                else if (slide.cta === "Contact Us") window.location.href = "/contact";
-                else if (slide.cta === "View Operations") window.location.href = "/operations";
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (slide.cta === "Learn More") navigate("/services");
+                else if (slide.cta === "Our Network") navigate("/operations");
+                else if (slide.cta === "Our Operations") navigate("/operations");
+                else if (slide.cta === "About Spodumene") navigate("/spodumene");
+                else if (slide.cta === "Contact Us") navigate("/contact");
+                else if (slide.cta === "View Operations") navigate("/operations");
               }}
             >
               {slide.cta}

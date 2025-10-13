@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import {
   Package,
   Users,
@@ -209,12 +211,11 @@ const Services = () => {
               Contact us today to discuss how our services can support your
               spodumene sourcing needs.
             </p>
-            <a
-              href="mailto:contact@quantumgenergy.com"
-              className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-            >
-              Contact Us
-            </a>
+            <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Button size="lg">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

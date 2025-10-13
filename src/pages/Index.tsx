@@ -67,7 +67,7 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <Link to="/operations">
+            <Link to="/operations" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Button size="lg" className="group">
                 Learn About Our Operations
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -130,7 +130,7 @@ const Index = () => {
             </div>
 
             <div className="mt-12 text-center">
-              <Link to="/services">
+              <Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <Button size="lg" variant="secondary" className="group text-lg px-8 py-6">
                   Discover Our Services
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -273,7 +273,7 @@ const Index = () => {
           </div>
 
           <div className="text-center">
-            <Link to="/services">
+            <Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Button size="lg" className="group">
                 Explore All Services
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
