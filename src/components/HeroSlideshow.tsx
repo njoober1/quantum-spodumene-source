@@ -14,37 +14,43 @@ const slides = [
     image: miningOperation,
     title: "Expert Spodumene Sourcing",
     subtitle: "Professional mining consultancy services for sustainable lithium sourcing",
-    cta: "Learn More"
+    cta: "Learn More",
+    path: "/services"
   },
   {
     image: lithiumOperations,
     title: "Direct Miner Connections",
     subtitle: "Established partnerships with premier lithium mining operations across three continents",
-    cta: "Our Network"
+    cta: "Our Network",
+    path: "/operations"
   },
   {
     image: greenEnergy,
     title: "Sustainable Energy Solutions",
     subtitle: "Connecting green energy initiatives with reliable mineral resources",
-    cta: "Our Operations"
+    cta: "Our Operations",
+    path: "/operations"
   },
   {
     image: spodumenePremium,
     title: "Premium Spodumene Quality",
     subtitle: "Direct access to high-grade spodumene deposits worldwide",
-    cta: "About Spodumene"
+    cta: "About Spodumene",
+    path: "/spodumene"
   },
   {
     image: consultingOffice,
     title: "Worldwide Mining Expertise",
     subtitle: "Professional consultancy with global reach and international partnerships",
-    cta: "Contact Us"
+    cta: "Contact Us",
+    path: "/contact"
   },
   {
     image: lithiumSpodumeneMine,
     title: "Lithium & Spodumene Mining Excellence",
     subtitle: "Direct access to world-class lithium extraction operations",
-    cta: "View Operations"
+    cta: "View Operations",
+    path: "/operations"
   }
 ];
 
@@ -55,7 +61,7 @@ const HeroSlideshow = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []);
 
@@ -95,12 +101,7 @@ const HeroSlideshow = () => {
               className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg transition-all hover:shadow-professional active:scale-95"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
-                if (slide.cta === "Learn More") navigate("/services");
-                else if (slide.cta === "Our Network") navigate("/operations");
-                else if (slide.cta === "Our Operations") navigate("/operations");
-                else if (slide.cta === "About Spodumene") navigate("/spodumene");
-                else if (slide.cta === "Contact Us") navigate("/contact");
-                else if (slide.cta === "View Operations") navigate("/operations");
+                navigate(slide.path);
               }}
             >
               {slide.cta}
