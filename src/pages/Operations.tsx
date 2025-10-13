@@ -3,14 +3,21 @@ import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Users, Globe, TrendingUp, CheckCircle, Target } from "lucide-react";
+import {
+  Building2,
+  Users,
+  Globe,
+  TrendingUp,
+  CheckCircle,
+  Target,
+} from "lucide-react";
 import consultingOffice from "@/assets/consulting-office.jpg";
 
 const Operations = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-background to-secondary/30">
         <div className="container mx-auto px-4">
@@ -19,8 +26,9 @@ const Operations = () => {
               Our Operations
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Quantum Green Energy provides comprehensive spodumene sourcing and mining consultancy services, 
-              connecting sustainable mining operations with clean energy initiatives worldwide.
+              Quantum Green Energy provides comprehensive spodumene sourcing and
+              mining consultancy services, connecting sustainable mining
+              operations with clean energy initiatives worldwide.
             </p>
           </div>
         </div>
@@ -35,10 +43,11 @@ const Operations = () => {
                 What We Do
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                As a specialized consultancy based in New York, we focus exclusively on spodumene sourcing 
-                for clients in the clean energy sector. Our expertise lies in identifying, evaluating, and 
-                securing reliable sources of high-grade spodumene to support lithium-ion battery production 
-                and sustainable energy storage solutions.
+                As a specialized consultancy, we focus exclusively on spodumene
+                sourcing for clients in the clean energy sector. Our expertise
+                lies in identifying, evaluating, and securing reliable sources
+                of high-grade spodumene to support lithium-ion battery
+                production and sustainable energy storage solutions.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
@@ -60,9 +69,9 @@ const Operations = () => {
               </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-professional">
-              <img 
-                src={consultingOffice} 
-                alt="Professional consulting office" 
+              <img
+                src={consultingOffice}
+                alt="Professional consulting office"
                 className="w-full h-80 object-cover"
               />
             </div>
@@ -77,8 +86,8 @@ const Operations = () => {
                   Strategic Sourcing
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Direct partnerships with mining operations to secure reliable spodumene supply chains 
-                  for our clients' long-term needs.
+                  Direct partnerships with mining operations to secure reliable
+                  spodumene supply chains for our clients' long-term needs.
                 </p>
               </CardContent>
             </Card>
@@ -90,8 +99,8 @@ const Operations = () => {
                   Expert Consultation
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Professional guidance on spodumene quality assessment, market trends, 
-                  and optimal procurement strategies.
+                  Professional guidance on spodumene quality assessment, market
+                  trends, and optimal procurement strategies.
                 </p>
               </CardContent>
             </Card>
@@ -103,8 +112,8 @@ const Operations = () => {
                   Global Network
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Extensive connections with spodumene producers across Australia, Chile, 
-                  and other key mining regions worldwide.
+                  Extensive connections with spodumene producers across
+                  Australia, Chile, and other key mining regions worldwide.
                 </p>
               </CardContent>
             </Card>
@@ -116,8 +125,8 @@ const Operations = () => {
                   Market Intelligence
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Real-time market analysis and pricing insights to help clients make 
-                  informed procurement decisions.
+                  Real-time market analysis and pricing insights to help clients
+                  make informed procurement decisions.
                 </p>
               </CardContent>
             </Card>
@@ -129,8 +138,8 @@ const Operations = () => {
                   Supply Chain Management
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  End-to-end logistics coordination from mine to processing facility, 
-                  ensuring timely and secure delivery.
+                  End-to-end logistics coordination from mine to processing
+                  facility, ensuring timely and secure delivery.
                 </p>
               </CardContent>
             </Card>
@@ -142,7 +151,7 @@ const Operations = () => {
                   Sustainability Focus
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Emphasis on environmentally responsible mining practices and 
+                  Emphasis on environmentally responsible mining practices and
                   sustainable supply chain development.
                 </p>
               </CardContent>

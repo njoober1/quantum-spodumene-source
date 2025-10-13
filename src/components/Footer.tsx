@@ -13,33 +13,42 @@ const Footer = () => {
               <span className="text-xl font-bold">Quantum Green Energy</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Professional spodumene sourcing consultancy, 
-              connecting sustainable mining operations with clean energy initiatives worldwide.
+              Professional spodumene sourcing consultancy based in New York,
+              connecting sustainable mining operations with clean energy
+              initiatives worldwide.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Contact Information</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
-                <span className="text-primary-foreground/80">Global Operations</span>
+                <span className="text-primary-foreground/80">
+                  Global Operations
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span className="text-primary-foreground/80">NYC: +1 (347) 877-7765</span>
+                <span className="text-primary-foreground/80">
+                  NYC: +1 (347) 877-7765
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4" />
-                <span className="text-primary-foreground/80">TOR: +1 (647) 292-6433</span>
+                <span className="text-primary-foreground/80">
+                  TOR: +1 (647) 292-6433
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-primary-foreground/80">contact@quantumgenergy.com</span>
+                <span className="text-primary-foreground/80">
+                  contact@quantumgenergy.com
+                </span>
               </div>
             </div>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
@@ -49,37 +58,46 @@ const Footer = () => {
               <li>Market Analysis</li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/privacy-policy" className="text-primary-foreground/80 hover:text-white transition-colors">
+                <a
+                  href="/privacy-policy"
+                  className="text-primary-foreground/80 hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/terms-of-service" className="text-primary-foreground/80 hover:text-white transition-colors">
+                <a
+                  href="/terms-of-service"
+                  className="text-primary-foreground/80 hover:text-white transition-colors"
+                >
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="/sustainability" className="text-primary-foreground/80 hover:text-white transition-colors">
+                <a
+                  href="/sustainability"
+                  className="text-primary-foreground/80 hover:text-white transition-colors"
+                >
                   Sustainability
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-primary-foreground/60">
               © 2024 Quantum Green Energy. All rights reserved.
             </p>
-            <a 
-              href="https://www.linkedin.com/company/quantum-green-energy" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/company/quantum-green-energy"
+              target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-primary-foreground hover:text-white transition-colors"
             >
