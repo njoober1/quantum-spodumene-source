@@ -92,8 +92,12 @@ const HeroSlideshow = () => {
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 font-semibold px-8 py-4 text-lg transition-all hover:shadow-professional"
               onClick={() => {
-                if (slide.cta === "Our Operations") window.location.href = "/operations";
+                if (slide.cta === "Learn More") window.location.href = "/services";
+                else if (slide.cta === "Our Network") window.location.href = "/operations";
+                else if (slide.cta === "Our Operations") window.location.href = "/operations";
                 else if (slide.cta === "About Spodumene") window.location.href = "/spodumene";
+                else if (slide.cta === "Contact Us") window.location.href = "/contact";
+                else if (slide.cta === "View Operations") window.location.href = "/operations";
               }}
             >
               {slide.cta}
