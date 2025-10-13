@@ -13,9 +13,9 @@ const Footer = () => {
               <span className="text-xl font-bold">Quantum Green Energy</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Professional spodumene sourcing consultancy based in New York,
-              connecting sustainable mining operations with clean energy
-              initiatives worldwide.
+              Professional spodumene sourcing consultancy, connecting
+              sustainable mining operations with clean energy initiatives
+              worldwide.
             </p>
           </div>
 

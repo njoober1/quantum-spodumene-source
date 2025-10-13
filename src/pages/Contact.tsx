@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-background to-secondary/30">
         <div className="container mx-auto px-4">
@@ -18,7 +18,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Get in touch with our team to discuss your spodumene sourcing needs
+              Get in touch with our team to discuss your spodumene sourcing
+              needs
             </p>
           </div>
         </div>
@@ -30,8 +31,10 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             {/* Contact Details */}
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-foreground mb-8">Get In Touch</h2>
-              
+              <h2 className="text-3xl font-bold text-foreground mb-8">
+                Get In Touch
+              </h2>
+
               <Card className="hover:shadow-professional transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
@@ -39,11 +42,15 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Headquarters</h3>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        Headquarters
+                      </h3>
                       <p className="text-muted-foreground">
-                        123 Mining District<br />
-                        Sydney, NSW 2000<br />
-                        Australia
+                        6e E 39th St Suite 504
+                        <br />
+                        New York, NY 10016
+                        <br />
+                        United States
                       </p>
                     </div>
                   </div>
@@ -57,10 +64,13 @@ const Contact = () => {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        Phone
+                      </h3>
                       <p className="text-muted-foreground">
-                        +61 2 1234 5678<br />
-                        +61 2 1234 5679
+                        NYC: +1 (347) 877-7765
+                        <br />
+                        TOR: +1 (647) 292-6433
                       </p>
                     </div>
                   </div>
@@ -74,9 +84,12 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Email</h3>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        Email
+                      </h3>
                       <p className="text-muted-foreground">
-                        info@quantumgenergy.com<br />
+                        contact@quantumgenergy.com
+                        <br />
                         sales@quantumgenergy.com
                       </p>
                     </div>
@@ -91,10 +104,14 @@ const Contact = () => {
                       <Clock className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Business Hours</h3>
+                      <h3 className="font-semibold text-foreground mb-2">
+                        Business Hours
+                      </h3>
                       <p className="text-muted-foreground">
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 10:00 AM - 2:00 PM<br />
+                        Monday - Friday: 9:00 AM - 6:00 PM
+                        <br />
+                        Saturday: 10:00 AM - 2:00 PM
+                        <br />
                         Sunday: Closed
                       </p>
                     </div>
@@ -105,11 +122,13 @@ const Contact = () => {
 
             {/* Map */}
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-8">Our Location</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-8">
+                Our Location
+              </h2>
               <Card className="overflow-hidden">
                 <CardContent className="p-0">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.654261745996!2d151.20732931521148!3d-33.87365098065035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.688931463791!2d-73.98346992346072!3d40.74972237139059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259029a6f6f41%3A0x4b3cfb0a41d6c21e!2s6%20E%2039th%20St%20Suite%20504%2C%20New%20York%2C%20NY%2010016%2C%20USA!5e0!3m2!1sen!2sus!4v1726562345678!5m2!1sen!2sus"
                     width="100%"
                     height="450"
                     style={{ border: 0 }}
