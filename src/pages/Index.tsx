@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import HeroSlideshow from "@/components/HeroSlideshow";
+import BackgroundVideoSection from "@/components/BackgroundVideoSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
@@ -17,8 +18,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSlideshow />
-      
-      {/* Operations Overview */}
+      <BackgroundVideoSection />
+      {/* Operations Overview */}/
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
