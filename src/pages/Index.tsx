@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import HeroSlideshow from "@/components/HeroSlideshow";
-import BackgroundVideoSection from "@/components/BackgroundVideoSection";
+import videoSrc from "@/assets/backgroundVideo.mp4";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import CookieConsent from "@/components/CookieConsent";
@@ -18,10 +18,23 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <HeroSlideshow />
-      <BackgroundVideoSection />
-      {/* Operations Overview */}/
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      
+      {/* Operations Overview with Video Background */}
+      <section className="py-20 relative overflow-hidden">
+        <video
+          src={videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            maskImage: 'radial-gradient(ellipse 90% 90% at 50% 50%, black 60%, transparent 100%)',
+            WebkitMaskImage: 'radial-gradient(ellipse 90% 90% at 50% 50%, black 60%, transparent 100%)'
+          }}
+        />
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px]" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Professional Spodumene Sourcing
