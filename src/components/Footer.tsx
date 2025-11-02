@@ -96,7 +96,7 @@ const Footer = () => {
               © 2024 Quantum Green Energy. All rights reserved.
             </p>
             <a
-              href="https://www.linkedin.com/company/quantum-green-energy"
+              href="https://www.linkedin.com/company/quantumgenergy"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-primary-foreground hover:text-white transition-colors"
