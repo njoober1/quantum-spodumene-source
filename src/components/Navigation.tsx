@@ -17,7 +17,7 @@ const Navigation = () => {
             <img
               src={logo}
               alt="Quantum Green Energy"
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
             <span className="text-xl font-bold text-foreground hidden sm:inline"></span>
           </Link>
