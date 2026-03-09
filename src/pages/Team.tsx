@@ -83,14 +83,11 @@ const Team = () => {
                     {member.bio}
                   </p>
 
-                  <div className="flex justify-center">
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
-                    >
+                  <div className="flex justify-center flex-col items-center">
+                    <span className="flex items-center space-x-2 text-muted-foreground opacity-50 cursor-not-allowed transition-colors">
                       <Mail className="h-5 w-5" />
                       <span className="text-sm">Contact</span>
-                    </a>
+                    </span>
                   </div>
                 </CardContent>
               </Card>

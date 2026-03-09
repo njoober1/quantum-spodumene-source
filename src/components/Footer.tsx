@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span className="text-primary-foreground/80">
+                <span className="text-primary-foreground/80 line-through">
                   contact@quantumgenergy.com
                 </span>
               </div>
@@ -51,11 +51,19 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80">
-              <li>Spodumene Sourcing</li>
-              <li>Mining Consultancy</li>
-              <li>Supply Chain Management</li>
-              <li>Market Analysis</li>
+            <ul className="space-y-2">
+              <li className="text-primary-foreground/80">Spodumene Sourcing</li>
+              <li className="text-primary-foreground/80">Mining Consultancy</li>
+              <li className="text-primary-foreground/80">Supply Chain Management</li>
+              <li className="text-primary-foreground/80">Market Analysis</li>
+              <li>
+                <a
+                  href="/ccus"
+                  className="text-primary-foreground/80 hover:text-white transition-colors"
+                >
+                  CCUS
+                </a>
+              </li>
             </ul>
           </div>
 

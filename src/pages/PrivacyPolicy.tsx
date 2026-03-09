@@ -8,13 +8,13 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={privacyImage} 
-            alt="Privacy Policy" 
+          <img
+            src={privacyImage}
+            alt="Privacy Policy"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70" />
@@ -41,8 +41,8 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Introduction</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Quantum Green Energy ("we," "our," or "us") is committed to protecting your privacy. 
-                  This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
+                  Quantum Green Energy ("we," "our," or "us") is committed to protecting your privacy.
+                  This Privacy Policy explains how we collect, use, disclose, and safeguard your information
                   when you visit our website or use our services.
                 </p>
               </div>
@@ -60,14 +60,14 @@ const PrivacyPolicy = () => {
                   <li>Apply for employment opportunities</li>
                 </ul>
                 <p className="text-muted-foreground leading-relaxed mt-4">
-                  This information may include your name, email address, phone number, company name, 
+                  This information may include your name, email address, phone number, company name,
                   job title, and any other information you choose to provide.
                 </p>
 
                 <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">Automatically Collected Information</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  When you visit our website, we automatically collect certain information about your 
-                  device, including information about your web browser, IP address, time zone, and some 
+                  When you visit our website, we automatically collect certain information about your
+                  device, including information about your web browser, IP address, time zone, and some
                   of the cookies installed on your device.
                 </p>
               </div>
@@ -90,7 +90,7 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Information Sharing and Disclosure</h2>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  We do not sell, trade, or rent your personal information to third parties. We may share 
+                  We do not sell, trade, or rent your personal information to third parties. We may share
                   your information in the following circumstances:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
@@ -104,9 +104,9 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Data Security</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We implement appropriate technical and organizational security measures to protect your 
-                  personal information against unauthorized access, alteration, disclosure, or destruction. 
-                  However, no method of transmission over the Internet or electronic storage is 100% secure, 
+                  We implement appropriate technical and organizational security measures to protect your
+                  personal information against unauthorized access, alteration, disclosure, or destruction.
+                  However, no method of transmission over the Internet or electronic storage is 100% secure,
                   and we cannot guarantee absolute security.
                 </p>
               </div>
@@ -129,9 +129,9 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Cookies and Tracking Technologies</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We use cookies and similar tracking technologies to track activity on our website and 
-                  hold certain information. You can instruct your browser to refuse all cookies or to 
-                  indicate when a cookie is being sent. However, if you do not accept cookies, you may 
+                  We use cookies and similar tracking technologies to track activity on our website and
+                  hold certain information. You can instruct your browser to refuse all cookies or to
+                  indicate when a cookie is being sent. However, if you do not accept cookies, you may
                   not be able to use some portions of our website.
                 </p>
               </div>
@@ -139,9 +139,9 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">International Data Transfers</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Your information may be transferred to and maintained on computers located outside of 
-                  your state, province, country, or other governmental jurisdiction where data protection 
-                  laws may differ. We take appropriate measures to ensure your data is treated securely 
+                  Your information may be transferred to and maintained on computers located outside of
+                  your state, province, country, or other governmental jurisdiction where data protection
+                  laws may differ. We take appropriate measures to ensure your data is treated securely
                   and in accordance with this Privacy Policy.
                 </p>
               </div>
@@ -149,8 +149,8 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Children's Privacy</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Our services are not intended for individuals under the age of 18. We do not knowingly 
-                  collect personal information from children. If you become aware that a child has provided 
+                  Our services are not intended for individuals under the age of 18. We do not knowingly
+                  collect personal information from children. If you become aware that a child has provided
                   us with personal information, please contact us.
                 </p>
               </div>
@@ -158,8 +158,8 @@ const PrivacyPolicy = () => {
               <div>
                 <h2 className="text-3xl font-bold text-foreground mb-4">Changes to This Privacy Policy</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We may update our Privacy Policy from time to time. We will notify you of any changes 
-                  by posting the new Privacy Policy on this page and updating the "Last Updated" date. 
+                  We may update our Privacy Policy from time to time. We will notify you of any changes
+                  by posting the new Privacy Policy on this page and updating the "Last Updated" date.
                   You are advised to review this Privacy Policy periodically for any changes.
                 </p>
               </div>
@@ -172,7 +172,7 @@ const PrivacyPolicy = () => {
                 <div className="bg-secondary/30 p-6 rounded-lg">
                   <p className="text-foreground font-semibold mb-2">Quantum Green Energy</p>
                   <p className="text-muted-foreground">New York, NY</p>
-                  <p className="text-muted-foreground">Email: contact@quantumgenergy.com</p>
+                  <p className="text-muted-foreground">Email: <span className="line-through">contact@quantumgenergy.com</span></p>
                   <p className="text-muted-foreground">Phone: +1 (347) 877-7765</p>
                 </div>
               </div>

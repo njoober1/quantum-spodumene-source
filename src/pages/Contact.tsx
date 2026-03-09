@@ -88,9 +88,9 @@ const Contact = () => {
                         Email
                       </h3>
                       <p className="text-muted-foreground">
-                        contact@quantumgenergy.com
+                        <span className="line-through">contact@quantumgenergy.com</span>
                         <br />
-                        sales@quantumgenergy.com
+                        <span className="line-through">sales@quantumgenergy.com</span>
                       </p>
                     </div>
                   </div>
